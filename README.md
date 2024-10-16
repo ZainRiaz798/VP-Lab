@@ -1,1 +1,1 @@
-# VP-Lab
+# Visual Programming Lab
