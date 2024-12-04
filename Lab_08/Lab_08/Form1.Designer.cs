@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_cname = new System.Windows.Forms.TextBox();
@@ -46,29 +45,10 @@
             this.dtgCustomer = new System.Windows.Forms.DataGridView();
             this.btn_add = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
-            this.customerDBDataSet5 = new Activity_01_Lab.CustomerDBDataSet5();
-            this.customerinfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customer_infoTableAdapter = new Activity_01_Lab.CustomerDBDataSet5TableAdapters.Customer_infoTableAdapter();
-            this.customerNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.countryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hobbiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerDBDataSet6 = new Activity_01_Lab.CustomerDBDataSet6();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customerTableAdapter = new Activity_01_Lab.CustomerDBDataSet6TableAdapters.CustomerTableAdapter();
-            this.customerDBDataSet7 = new Activity_01_Lab.CustomerDBDataSet7();
-            this.customerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.customerTableAdapter1 = new Activity_01_Lab.CustomerDBDataSet7TableAdapters.CustomerTableAdapter();
+            this.updatebtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDBDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerinfoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDBDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDBDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -95,7 +75,6 @@
             this.txt_cname.Name = "txt_cname";
             this.txt_cname.Size = new System.Drawing.Size(121, 20);
             this.txt_cname.TabIndex = 2;
-            this.txt_cname.TextChanged += new System.EventHandler(this.txt_cname_TextChanged);
             // 
             // combo_country
             // 
@@ -213,17 +192,10 @@
             // 
             // dtgCustomer
             // 
-            this.dtgCustomer.AutoGenerateColumns = false;
             this.dtgCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.customerNameDataGridViewTextBoxColumn,
-            this.countryDataGridViewTextBoxColumn,
-            this.genderDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn,
-            this.hobbiesDataGridViewTextBoxColumn});
-            this.dtgCustomer.DataSource = this.customerBindingSource1;
-            this.dtgCustomer.Location = new System.Drawing.Point(279, 21);
+            this.dtgCustomer.Location = new System.Drawing.Point(284, 21);
             this.dtgCustomer.Name = "dtgCustomer";
+            this.dtgCustomer.RowHeadersWidth = 51;
             this.dtgCustomer.Size = new System.Drawing.Size(489, 294);
             this.dtgCustomer.TabIndex = 10;
             // 
@@ -247,83 +219,23 @@
             this.btn_delete.UseVisualStyleBackColor = true;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
-            // customerDBDataSet5
+            // updatebtn
             // 
-            this.customerDBDataSet5.DataSetName = "CustomerDBDataSet5";
-            this.customerDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customerinfoBindingSource
-            // 
-            this.customerinfoBindingSource.DataMember = "Customer_info";
-            this.customerinfoBindingSource.DataSource = this.customerDBDataSet5;
-            // 
-            // customer_infoTableAdapter
-            // 
-            this.customer_infoTableAdapter.ClearBeforeFill = true;
-            // 
-            // customerNameDataGridViewTextBoxColumn
-            // 
-            this.customerNameDataGridViewTextBoxColumn.DataPropertyName = "CustomerName";
-            this.customerNameDataGridViewTextBoxColumn.HeaderText = "CustomerName";
-            this.customerNameDataGridViewTextBoxColumn.Name = "customerNameDataGridViewTextBoxColumn";
-            // 
-            // countryDataGridViewTextBoxColumn
-            // 
-            this.countryDataGridViewTextBoxColumn.DataPropertyName = "Country";
-            this.countryDataGridViewTextBoxColumn.HeaderText = "Country";
-            this.countryDataGridViewTextBoxColumn.Name = "countryDataGridViewTextBoxColumn";
-            // 
-            // genderDataGridViewTextBoxColumn
-            // 
-            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
-            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
-            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            // 
-            // hobbiesDataGridViewTextBoxColumn
-            // 
-            this.hobbiesDataGridViewTextBoxColumn.DataPropertyName = "Hobbies";
-            this.hobbiesDataGridViewTextBoxColumn.HeaderText = "Hobbies";
-            this.hobbiesDataGridViewTextBoxColumn.Name = "hobbiesDataGridViewTextBoxColumn";
-            // 
-            // customerDBDataSet6
-            // 
-            this.customerDBDataSet6.DataSetName = "CustomerDBDataSet6";
-            this.customerDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customerBindingSource
-            // 
-            this.customerBindingSource.DataMember = "Customer";
-            this.customerBindingSource.DataSource = this.customerDBDataSet6;
-            // 
-            // customerTableAdapter
-            // 
-            this.customerTableAdapter.ClearBeforeFill = true;
-            // 
-            // customerDBDataSet7
-            // 
-            this.customerDBDataSet7.DataSetName = "CustomerDBDataSet7";
-            this.customerDBDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customerBindingSource1
-            // 
-            this.customerBindingSource1.DataMember = "Customer";
-            this.customerBindingSource1.DataSource = this.customerDBDataSet7;
-            // 
-            // customerTableAdapter1
-            // 
-            this.customerTableAdapter1.ClearBeforeFill = true;
+            this.updatebtn.Location = new System.Drawing.Point(28, 330);
+            this.updatebtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.updatebtn.Name = "updatebtn";
+            this.updatebtn.Size = new System.Drawing.Size(75, 23);
+            this.updatebtn.TabIndex = 13;
+            this.updatebtn.Text = "Update";
+            this.updatebtn.UseVisualStyleBackColor = true;
+            this.updatebtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 374);
+            this.Controls.Add(this.updatebtn);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.dtgCustomer);
@@ -346,12 +258,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDBDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerinfoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDBDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDBDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,20 +282,7 @@
         private System.Windows.Forms.DataGridView dtgCustomer;
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btn_delete;
-        private CustomerDBDataSet5 customerDBDataSet5;
-        private System.Windows.Forms.BindingSource customerinfoBindingSource;
-        private CustomerDBDataSet5TableAdapters.Customer_infoTableAdapter customer_infoTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn countryDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hobbiesDataGridViewTextBoxColumn;
-        private CustomerDBDataSet6 customerDBDataSet6;
-        private System.Windows.Forms.BindingSource customerBindingSource;
-        private CustomerDBDataSet6TableAdapters.CustomerTableAdapter customerTableAdapter;
-        private CustomerDBDataSet7 customerDBDataSet7;
-        private System.Windows.Forms.BindingSource customerBindingSource1;
-        private CustomerDBDataSet7TableAdapters.CustomerTableAdapter customerTableAdapter1;
+        private System.Windows.Forms.Button updatebtn;
     }
 }
 

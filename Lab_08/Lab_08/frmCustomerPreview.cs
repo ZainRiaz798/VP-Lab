@@ -22,13 +22,13 @@ namespace Activity_01_Lab
 
         }
 
-        public void SetValues(string name, string country, string gender, string hobby, string status)
+        public void SetValues(string name, string country, string gender, string hobby, int status)
         {
             lblName.Text = name;
             lblCountry.Text = country;
             lblGender.Text = gender;
             lblHobby.Text = hobby;
-            lblStatus.Text = status;
+            lblStatus.Text = status.ToString();
         }
 
         private void label4_Click(object sender, EventArgs e)
